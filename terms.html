@@ -9,10 +9,11 @@
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;line-height:1.6;color:#222;margin:32px auto;padding:0 16px;max-width:var(--max)}
     h1{color:var(--accent);font-size:1.8rem;margin-bottom:6px}
     h2{color:var(--accent);font-size:1.15rem;margin-top:22px}
+    h3{color:var(--accent);font-size:1rem;margin-top:16px;margin-bottom:4px}
     p{margin:12px 0}
     ul{margin:8px 0 12px 20px}
     a{color:var(--accent)}
-    header, footer{margin-bottom:12px}
+    header,footer{margin-bottom:12px}
     footer{color:var(--muted);font-size:0.9rem;border-top:1px solid #eee;padding-top:12px}
     .note{background:#f7fff7;border-left:4px solid var(--accent);padding:10px;margin:12px 0}
     .small{font-size:0.95rem;color:var(--muted)}
@@ -20,10 +21,10 @@
 </head>
 <body>
   <header>
-    <h1>PigPal — Terms & Conditions</h1>
+    <h1>PigPal — Terms &amp; Conditions</h1>
     <p class="small">
-      Version: <strong>1.0</strong> &nbsp;•&nbsp;
-      Effective date: <strong>October 29, 2025</strong>
+      Version: <strong>2.0</strong> &nbsp;•&nbsp;
+      Effective date: <strong>April 30, 2026</strong>
     </p>
   </header>
 
@@ -32,7 +33,11 @@
     <p>
       PigPal is a digital farm-management tool developed by <strong>SuperApps</strong> to help users record,
       monitor, and analyze piggery-related data such as breeding, feeding, health, inventory, and financial records.
-      It is for informational and record-keeping purposes only and does <em>not</em> replace veterinary, medical,
+      It also includes an optional peer-to-peer <strong>Marketplace</strong> for buying and selling farm-related
+      animals and goods.
+    </p>
+    <p>
+      PigPal is for informational and record-keeping purposes only and does <em>not</em> replace veterinary, medical,
       financial, accounting, or legal advice.
     </p>
   </section>
@@ -52,6 +57,7 @@
       <li>You must verify reports or outputs before making operational or financial decisions.</li>
       <li>You agree not to misuse, copy, or redistribute PigPal or its data services.</li>
       <li>You are responsible for safeguarding your credentials and preventing unauthorized access.</li>
+      <li>You may opt out of your data being used for machine learning model improvement at any time through the privacy and data sharing settings in the app's Settings screen. Opting out does not affect any core functionality.</li>
     </ul>
   </section>
 
@@ -64,16 +70,28 @@
   </section>
 
   <section>
-    <h2>5. Data Storage, Cloud Backup & Sync</h2>
+    <h2>5. Data Storage, Cloud Backup &amp; Sync</h2>
     <ul>
       <li>PigPal stores your data <strong>locally on your device</strong> and, if enabled, securely in cloud storage using services such as <strong>Google Firebase</strong> (Firestore, Cloud Storage, and Cloud Functions).</li>
       <li>Cloud sync enables data recovery, multi-device access, and server-based reminders.</li>
       <li>Your cloud data is encrypted <strong>in transit</strong> and <strong>at rest</strong>.</li>
       <li>You can disable cloud sync anytime in settings. Disabling sync stops new uploads but does not automatically delete existing backups.</li>
-      <li>You may request <strong>full deletion</strong> of your cloud data by emailing <a href="mailto:superappsint@gmail.com">superappsint@gmail.com</a>.</li>
+      <li>You may request <strong>full deletion</strong> of your cloud data by emailing <a href="mailto:superappsint@gmail.com">superappsint@gmail.com</a>. Deletion requests will be confirmed once complete.</li>
       <li>SuperApps is not liable for data loss due to device damage, deletion, account issues, or user error.</li>
     </ul>
     <p class="note"><strong>Data Safety:</strong> This section aligns with our Play Store data disclosures and Privacy Policy regarding collection, use, security, and deletion.</p>
+
+    <h3>5A. Machine Learning and Model Improvement</h3>
+    <p>
+      We may use anonymised and aggregated farm data — stripped of any identifier that could link it back to you
+      or your farm — to train and improve predictive features within PigPal (for example, feed cost forecasting
+      or health pattern detection). Raw farm records, animal tags, financial figures, and personal identifiers
+      are never used in identifiable form for model training.
+    </p>
+    <p>
+      You may opt out of this use at any time through the privacy and data sharing settings in the app's
+      Settings screen. Opting out will not affect any core functionality.
+    </p>
   </section>
 
   <section>
@@ -87,18 +105,24 @@
 
   <section>
     <h2>7. Third-Party Services</h2>
-    <p>
-      PigPal integrates with trusted third-party services such as Firebase Authentication, Cloud Firestore,
-      Cloud Storage, Crashlytics, Firebase Cloud Messaging, and Google AdMob (ads shown only during trial).
-      Each service operates under its own terms and privacy policy.
-    </p>
+    <p>PigPal integrates with trusted third-party services, including:</p>
+    <ul>
+      <li><strong>Firebase Authentication</strong> — user sign-in</li>
+      <li><strong>Cloud Firestore and Cloud Storage</strong> — data sync and backup</li>
+      <li><strong>Crashlytics</strong> — error and crash reporting</li>
+      <li><strong>Google Cloud Messaging / FCM</strong> — notifications</li>
+      <li><strong>Google AdMob</strong> — ads during trial period only</li>
+      <li><strong>Machine learning infrastructure providers</strong> — anonymised, aggregated farm data only, processed under strict data processing agreements</li>
+    </ul>
+    <p>Each service operates under its own terms and privacy policy. SuperApps does not control their availability or accuracy and is not responsible for service outages or third-party actions.</p>
   </section>
 
   <section>
     <h2>8. Privacy</h2>
     <p>
-      Your use of PigPal is also governed by our <strong>Privacy Policy</strong>, which explains how information is collected,
-      stored, and processed. Review it anytime at:
+      Your use of PigPal is also governed by our <strong>Privacy Policy</strong>, which explains how information
+      is collected, stored, and processed — including your right to opt out of ML training data use via the
+      privacy and data sharing settings. Review it anytime at:
       <a href="https://pigpal.web.app/privacy.html">https://pigpal.web.app/privacy.html</a>.
     </p>
   </section>
@@ -113,82 +137,177 @@
   </section>
 
   <section>
-    <h2>10. Advertising</h2>
+    <h2>10. Marketplace &amp; UGC Moderation Policy</h2>
+    <p>
+      PigPal includes optional user-generated content (UGC) features such as Marketplace listings and in-app
+      chat. To comply with Google Play policies and local laws, the following rules apply.
+    </p>
+
+    <h3>10.1 Prohibited Content &amp; Conduct</h3>
+    <p>You must not post, upload, link to, or solicit:</p>
     <ul>
-      <li>Ads are displayed <strong>only</strong> during the free-trial period. Paid tiers (Bronze/Silver/Gold) do not show ads.</li>
-      <li>Ads are provided by <strong>Google AdMob</strong>, which may use the device’s <strong>Advertising ID (AAID)</strong> for contextual ads and measurement.</li>
+      <li>Illegal or regulated items/services (e.g., weapons, drugs, stolen goods, endangered wildlife or wildlife products, prescription medicines, human/animal trafficking, or any item whose sale is restricted in your jurisdiction).</li>
+      <li>Sexual content or exploitation, nudity, pornography, or solicitation; any content involving minors is strictly prohibited and will be reported to authorities.</li>
+      <li>Hate speech, harassment, threats, bullying, or incitement of violence; discriminatory content based on protected characteristics.</li>
+      <li>Fraud or deception: scams, phishing, fake engagement, misrepresentation (including false product/animal claims), bait-and-switch, price manipulation.</li>
+      <li>Personal data or sensitive information of others without consent (doxxing).</li>
+      <li>IP violations (copyright/trademark infringement), counterfeit goods.</li>
+      <li>Malware, spam, scraping, or attempts to bypass technical or policy restrictions.</li>
+    </ul>
+    <p>You are responsible for ensuring that any animal sales or transfers comply with all applicable local laws and welfare standards.</p>
+
+    <h3>10.2 Listing Standards</h3>
+    <ul>
+      <li>Listings must be accurate, lawful, and complete (title, description, pricing).</li>
+      <li>No duplicate or mass-spam postings.</li>
+      <li>Photos must be your own or used with permission; no stock images that mislead buyers.</li>
+      <li>Do not request off-platform payment for the purpose of fee evasion or fraud.</li>
+    </ul>
+
+    <h3>10.3 Enforcement Actions</h3>
+    <p>To protect users and comply with policy, we may, at our discretion and with or without notice:</p>
+    <ul>
+      <li>Warn or educate you on the issue and how to fix it.</li>
+      <li>Remove or hide a listing (takedown); set it private; delete public mirrors.</li>
+      <li>Limit features (e.g., posting, boosting, or messaging).</li>
+      <li>Suspend your account temporarily (e.g., 24 hours / 7 days / 30 days).</li>
+      <li>Ban or terminate your Marketplace access (indefinitely or permanently) for severe or repeat violations.</li>
+      <li>Delete violating chats (hard delete), after which any associated report may be marked deleted_chat.</li>
+      <li>Notify or cooperate with law enforcement where legally required or to prevent harm.</li>
+    </ul>
+    <p><strong>Reposting after takedown:</strong> if a listing is locked due to a serious violation, it cannot be republished unless we explicitly approve.</p>
+
+    <h3>10.4 Effects on Paid Services</h3>
+    <p>
+      Fees for Marketplace boosts or promotions are collected through Google Play and are subject to Google
+      Play's refund policy. SuperApps will not separately compensate for removals made under this policy.
+    </p>
+
+    <h3>10.5 Appeals</h3>
+    <p>
+      You may appeal a moderation action within 7 days of notice by emailing
+      <a href="mailto:superappsint@gmail.com">superappsint@gmail.com</a> or using in-app Help.
+      Include your User ID, Listing ID / Chat ID, and supporting evidence (see §10.6).
+      We will review and respond within <strong>14 business days</strong>. Post-appeal decisions may be final.
+      For urgent safety or legality concerns, we may act without prior notice.
+    </p>
+
+    <h3>10.6 How to Report Listings / Chats (with Evidence)</h3>
+    <p>Use the Report option in the app and email <a href="mailto:superappsint@gmail.com">superappsint@gmail.com</a>. Provide:</p>
+    <ul>
+      <li><strong>For Listings:</strong> Listing ID/URL, title, reason (e.g., illegal item, scam, misleading claim), and screenshots of the listing, price, and communications.</li>
+      <li><strong>For Chats:</strong> Chat ID, the other party's UID, date/time of problematic messages, and screenshots showing message bubbles and timestamps. Redact sensitive banking details; keep reference IDs visible.</li>
+      <li>If payment occurred, attach redacted proof (date, amount, reference).</li>
+    </ul>
+    <p>Submit original, unedited screenshots where possible. Submitting false or manipulated evidence may result in enforcement.</p>
+
+    <h3>10.7 Abusive or False Reporting</h3>
+    <p>Repeated false, malicious, or spam reports are policy violations and may lead to restrictions or bans. Good-faith mistakes are not penalized.</p>
+  </section>
+
+  <section>
+    <h2>11. Advertising</h2>
+    <ul>
+      <li>Ads are displayed <strong>only</strong> during the free-trial period. Paid tiers (Bronze / Silver / Gold) do not show ads.</li>
+      <li>Ads are provided by <strong>Google AdMob</strong>, which may use the device's <strong>Advertising ID (AAID)</strong> for contextual ads and measurement.</li>
       <li>No personal or farm data is shared for ad targeting.</li>
     </ul>
   </section>
 
   <section>
-    <h2>11. Intellectual Property</h2>
+    <h2>12. Billing, Cancellation &amp; Refunds</h2>
     <p>
-      All rights, title, and interest in PigPal—including software, design, data models, and trademarks—belong to SuperApps or its licensors.
-      You are granted a limited, non-exclusive, non-transferable license to use the app solely for your own farm-management activities.
+      Subscriptions to PigPal (including Bronze, Silver, and Gold plans) and any fees for Marketplace boosts
+      or promotions are processed exclusively through <strong>Google Play</strong>. All billing, cancellation,
+      and refund matters — including automatic renewal, prorated refunds, and dispute resolution — are governed
+      by <strong>Google Play's own billing and refund policies</strong>.
+    </p>
+    <p>
+      To cancel a subscription or request a refund, use the Google Play subscriptions management page or
+      contact Google Play support directly. SuperApps does not process payments or refunds independently
+      and has no ability to override Google Play's billing decisions.
+    </p>
+    <p>
+      Fees for boosts or promotions tied to content removed for a policy violation under §10.4 are subject
+      to Google Play's refund policy; SuperApps will not separately compensate for such removals.
     </p>
   </section>
 
   <section>
-    <h2>12. No Warranties</h2>
+    <h2>13. Intellectual Property</h2>
     <p>
-      PigPal and its services are provided “as is” and “as available”, without warranties of any kind—express or implied—
-      including merchantability or fitness for a particular purpose. We do not guarantee uninterrupted access, error-free operation,
-      or data recovery under all conditions.
+      All rights, title, and interest in PigPal — including software, design, data models, and trademarks —
+      belong to SuperApps or its licensors. You are granted a limited, non-exclusive, non-transferable license
+      to use the app solely for your own farm-management activities.
     </p>
   </section>
 
   <section>
-    <h2>13. Limitation of Liability</h2>
+    <h2>14. No Warranties</h2>
+    <p>
+      PigPal and its services are provided "as is" and "as available", without warranties of any kind — express
+      or implied — including merchantability or fitness for a particular purpose. We do not guarantee
+      uninterrupted access, error-free operation, or data recovery under all conditions.
+    </p>
+  </section>
+
+  <section>
+    <h2>15. Limitation of Liability</h2>
     <p>
       To the maximum extent permitted by law, SuperApps shall not be liable for any direct, indirect, incidental,
-      consequential, or special damages (including data loss, revenue loss, or livestock loss). If liability is established,
-      total damages shall not exceed ₹0.00 / $0.00. You use the app entirely at your own risk.
+      consequential, or special damages (including data loss, revenue loss, or livestock loss). If liability is
+      established, total damages shall not exceed ₹0.00 / $0.00. You use the app entirely at your own risk.
     </p>
   </section>
 
   <section>
-    <h2>14. Indemnification</h2>
+    <h2>16. Indemnification</h2>
     <p>
-      You agree to indemnify and hold harmless SuperApps, its directors, and employees from all claims, damages, or expenses arising from
-      your use or misuse of the app, violation of these Terms, or breach of any applicable law or regulation.
+      You agree to indemnify and hold harmless SuperApps, its directors, and employees from all claims, damages,
+      or expenses arising from your use or misuse of the app, violation of these Terms, or breach of any
+      applicable law or regulation.
     </p>
   </section>
 
   <section>
-    <h2>15. Termination</h2>
+    <h2>17. Termination</h2>
     <p>
-      We may suspend or terminate access at any time, with or without notice, if you violate these Terms or if required by law.
-      Upon termination, local data remains on your device; cloud data will be deleted in accordance with our Privacy Policy.
+      We may suspend or terminate access at any time, with or without notice, if you violate these Terms or if
+      required by law. Upon termination, local data remains on your device; cloud data will be deleted in
+      accordance with our Privacy Policy.
     </p>
   </section>
 
   <section>
-    <h2>16. Updates and Modifications</h2>
+    <h2>18. Updates and Modifications</h2>
     <p>
-      We may revise these Terms periodically. Continued use of the app after updates means you accept the new Terms.
-      The latest version will always be available inside the app and on our website.
+      We may revise these Terms periodically. Continued use of the app after updates means you accept the new
+      Terms. The latest version will always be available inside the app and on our website:
+      <a href="https://superappsindia.github.io/pigpal-site/terms.html">https://superappsindia.github.io/pigpal-site/terms.html</a>.
     </p>
   </section>
 
   <section>
-    <h2>17. Governing Law & Jurisdiction</h2>
+    <h2>19. Governing Law &amp; Jurisdiction</h2>
     <p>
-      These Terms are governed by the laws of India. Any disputes are subject to the exclusive jurisdiction of the courts of Guwahati, Assam.
+      These Terms are governed by the laws of India, including the <strong>Digital Personal Data Protection
+      Act, 2023</strong>, as applicable to data-related matters. Any disputes are subject to the exclusive
+      jurisdiction of the courts of Guwahati, Assam.
     </p>
   </section>
 
   <section>
-    <h2>18. Severability</h2>
+    <h2>20. Severability</h2>
     <p>
-      If any provision of these Terms is found invalid or unenforceable, the remaining provisions shall remain in full force and effect.
+      If any provision of these Terms is found invalid or unenforceable, the remaining provisions shall remain
+      in full force and effect.
     </p>
   </section>
 
   <section>
-    <h2>19. Contact</h2>
+    <h2>21. Contact</h2>
     <p>
-      For questions or requests regarding these Terms:<br />
+      For questions, reports, or appeals regarding these Terms or moderation actions:<br />
       Email: <a href="mailto:superappsint@gmail.com">superappsint@gmail.com</a>
     </p>
   </section>
