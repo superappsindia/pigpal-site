@@ -52,6 +52,7 @@
       <li><strong>Support data:</strong> messages, attachments, or screenshots you send to us when contacting support.</li>
       <li><strong>Marketplace listings:</strong> photos, descriptions, and contact details you choose to publish in PigPal Marketplace are visible to other users within the app and can be edited or deleted by you at any time.</li>
       <li><strong>Camera &amp; location (Marketplace):</strong> when you create or edit a Marketplace listing, PigPal may request camera access to capture or attach listing photos and (optional) <em>approximate</em> location to tag your farm area. Location is never collected automatically and can be skipped; denying these permissions only limits those specific features.</li>
+      <li><strong>Anonymous farm data (Data Collection, opt-in):</strong> if you enable Data Collection in Settings, anonymous figures such as sale price, pig breed, litter size, and piglet mortality may be shared with our servers to build regional benchmarks. Your name, farm name, pig tag IDs, and any personally identifiable information are never included.</li>
       <li><strong>Advertising data (trial users only):</strong> if you are using the free-trial version, Google AdMob may access the device's Google Advertising ID (AAID) and other anonymous identifiers to display and measure contextual ads. Paid users do not see ads.</li>
     </ul>
   </section>
@@ -65,21 +66,35 @@
       <li>Diagnose and fix technical issues, including crash reporting and performance optimization.</li>
       <li>Conduct analytics to improve features and user experience.</li>
       <li>Respond to your support and feedback requests.</li>
+      <li>Build regional pig price benchmarks from anonymized, collective farm data shared by enrolled users (when you opt in to Data Collection).</li>
       <li>Support Marketplace features such as attaching photos and optionally tagging an approximate location on listings (only when you choose to use those features).</li>
     </ul>
   </section>
   <section>
-    <h2>Market Price Insights &amp; data sharing</h2>
+    <h2>Farm &amp; Market Insights — data collection &amp; sharing</h2>
     <p>
-      PigPal includes an optional <strong>Market Price Insights</strong> feature that, when enabled, shares
-      anonymous sale prices with our servers to build regional price benchmarks for enrolled farms.
-      Only aggregated, anonymous figures are shared — your name, pig tag IDs, farm location, and any
-      personally identifiable information never leave your device as part of this feature.
+      PigPal includes an <strong>opt-in Data Collection</strong> feature that, when enabled, shares
+      anonymous farm data with our servers to build regional benchmarks for all enrolled farms.
+      The data shared is limited to anonymous figures only — specifically: sale price, pig breed, litter size,
+      and piglet mortality. Your name, farm name, pig tag IDs, location, financial account details,
+      and any personally identifiable information never leave your device as part of this feature.
     </p>
     <p>
-      This feature is <strong>opt-in</strong> and can be toggled on or off at any time from
-      <em>Settings → Privacy &amp; Data Sharing → Market Price Insights</em>. Disabling it will stop
-      any further sharing immediately.
+      When Data Collection is enabled, you gain access to the <strong>Farm &amp; Market Insights</strong> tab
+      inside the app's Insights panel. This tab includes the Market Price Index (a regional average sale price
+      computed from anonymous contributions by enrolled farms) and, as it becomes available,
+      regional benchmarks for breed performance, litter size, and piglet mortality.
+      If you disable Data Collection, the Farm &amp; Market Insights tab is shown with a blurred overlay
+      and the data within it is unavailable until you re-enable it.
+    </p>
+    <p>
+      The <strong>Business Insights</strong> tab (herd snapshot, feed balance, profit chart, break-even
+      analysis, and health task alerts) is a separate paid feature and is not affected by the
+      Data Collection toggle.
+    </p>
+    <p>
+      Data Collection is <strong>opt-in</strong> and can be toggled on or off at any time from
+      <em>Settings → Data Collection</em>. Disabling it stops any further data sharing immediately.
     </p>
   </section>
   <section>
@@ -87,7 +102,7 @@
     <p class="note-info">
       <strong>Note:</strong> The machine learning training pipeline described in this section is planned
       for a future release and is <strong>not currently active</strong>. The anonymous data collected
-      through Market Price Insights (above) may be used as input when this feature launches.
+      through the Data Collection feature (above) may be used as input when this pipeline launches.
       This section is included for transparency so users understand how their data may be used
       when that feature is introduced.
     </p>
@@ -99,8 +114,8 @@
       form for model training.
     </p>
     <p>
-      When this feature becomes active, you will be able to opt out at any time from the privacy and
-      data sharing settings in the app's Settings screen. Opting out will not affect any core functionality.
+      When this feature becomes active, you will be able to opt out at any time from
+      <em>Settings → Data Collection</em>. Opting out will not affect any core functionality.
     </p>
   </section>
   <section>
@@ -126,7 +141,7 @@
     <ul>
       <li><strong>Service providers:</strong> trusted third parties (e.g., Google Firebase, Crashlytics, or analytics partners)
         who help us operate the app, store data, or send notifications. They process data under strict confidentiality agreements.</li>
-      <li><strong>Market Price Insights (active, opt-in):</strong> when you enable Market Price Insights, anonymous sale price data is shared with our servers to compute regional price benchmarks. No personally identifiable or farm-identifiable data is included.</li>
+      <li><strong>Data Collection — Farm &amp; Market Insights (active, opt-in):</strong> when you enable Data Collection, anonymous figures (sale price, pig breed, litter size, piglet mortality) are shared with our servers to compute regional benchmarks. No personally identifiable or farm-identifiable data is included.</li>
       <li><strong>ML service providers (future):</strong> when the ML training pipeline launches, anonymised and aggregated data may be processed by machine learning infrastructure providers under strict data processing agreements. No personally identifiable data will be shared. This is not currently active.</li>
       <li><strong>Advertising partners:</strong> for free-trial users, Google AdMob may process the device Advertising ID (AAID) and related signals to display and measure contextual ads. No personal or farm data is shared for ad targeting.</li>
       <li><strong>Legal requests:</strong> when required by law or to protect our rights, property, or users' safety.</li>
@@ -183,8 +198,8 @@
     <ul>
       <li>Access and review your personal or farm-related data stored by PigPal.</li>
       <li>Request correction, export, or deletion of your data.</li>
-      <li>Withdraw consent for analytics or cloud synchronization at any time.</li>
-      <li>Opt out of your data being used in ML training (when that feature becomes active), separately from other privacy settings in the Settings screen.</li>
+      <li>Withdraw consent for analytics, cloud synchronization, or Data Collection at any time.</li>
+      <li>Opt out of your data being used in ML training (when that feature becomes active) from <em>Settings → Data Collection</em>.</li>
     </ul>
     <p>To exercise your rights, please contact us at the address below. Verification may be required before action.</p>
   </section>
