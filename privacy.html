@@ -15,13 +15,14 @@
     header, footer{margin-bottom:12px}
     footer{color:var(--muted);font-size:0.9rem;border-top:1px solid #eee;padding-top:12px}
     .note{background:#f7fff7;border-left:4px solid var(--accent);padding:10px;margin:12px 0}
+    .note-info{background:#fff8e1;border-left:4px solid #f9a825;padding:10px;margin:12px 0}
     .small{font-size:0.95rem;color:var(--muted)}
   </style>
 </head>
 <body>
   <header>
     <h1>PigPal — Privacy Policy</h1>
-    <p class="small">Last updated: <strong>May 09, 2025</strong></p>
+    <p class="small">Last updated: <strong>May 09, 2026</strong></p>
   </header>
   <section>
     <h2>Introduction</h2>
@@ -44,13 +45,13 @@
     <h2>Information we collect</h2>
     <p>We collect the following types of information:</p>
     <ul>
-      <li><strong>Device & technical data:</strong> device model, operating system version, app version, language, and basic diagnostics for crash reports and troubleshooting.</li>
+      <li><strong>Device &amp; technical data:</strong> device model, operating system version, app version, language, and basic diagnostics for crash reports and troubleshooting.</li>
       <li><strong>App data you enter:</strong> farm records, animal tags, breeding logs, vaccination and deworming records, feed and inventory data, financial transactions, and other farm management information you choose to store in the app.</li>
       <li><strong>Usage data:</strong> anonymous or pseudonymized analytics events (feature usage, timestamps) to help us improve the app.</li>
       <li><strong>Cloud sync data:</strong> when you enable cloud synchronization or backups, copies of your farm records are securely stored on cloud servers (for example, Google Firebase Firestore or Cloud Storage) under your account identifier.</li>
       <li><strong>Support data:</strong> messages, attachments, or screenshots you send to us when contacting support.</li>
       <li><strong>Marketplace listings:</strong> photos, descriptions, and contact details you choose to publish in PigPal Marketplace are visible to other users within the app and can be edited or deleted by you at any time.</li>
-      <li><strong>Camera & location (Marketplace):</strong> when you create or edit a Marketplace listing, PigPal may request camera access to capture or attach listing photos and (optional) <em>approximate</em> location to tag your farm area. Location is never collected automatically and can be skipped; denying these permissions only limits those specific features.</li>
+      <li><strong>Camera &amp; location (Marketplace):</strong> when you create or edit a Marketplace listing, PigPal may request camera access to capture or attach listing photos and (optional) <em>approximate</em> location to tag your farm area. Location is never collected automatically and can be skipped; denying these permissions only limits those specific features.</li>
       <li><strong>Advertising data (trial users only):</strong> if you are using the free-trial version, Google AdMob may access the device's Google Advertising ID (AAID) and other anonymous identifiers to display and measure contextual ads. Paid users do not see ads.</li>
     </ul>
   </section>
@@ -68,16 +69,38 @@
     </ul>
   </section>
   <section>
-    <h2>Machine learning and model improvement</h2>
+    <h2>Market Price Insights &amp; data sharing</h2>
     <p>
-      We may use anonymised and aggregated farm data — stripped of any identifier that could link it back
-      to you or your farm — to train and improve predictive features within PigPal (for example, feed cost
-      forecasting or health pattern detection). Raw farm records, animal tags, financial figures, and personal
-      identifiers are never used in identifiable form for model training.
+      PigPal includes an optional <strong>Market Price Insights</strong> feature that, when enabled, shares
+      anonymous sale prices with our servers to build regional price benchmarks for enrolled farms.
+      Only aggregated, anonymous figures are shared — your name, pig tag IDs, farm location, and any
+      personally identifiable information never leave your device as part of this feature.
     </p>
     <p>
-      You may opt out of this use at any time from the privacy and data sharing settings in the app's
-      Settings screen. Opting out will not affect any core functionality.
+      This feature is <strong>opt-in</strong> and can be toggled on or off at any time from
+      <em>Settings → Privacy &amp; Data Sharing → Market Price Insights</em>. Disabling it will stop
+      any further sharing immediately.
+    </p>
+  </section>
+  <section>
+    <h2>Machine learning and model improvement</h2>
+    <p class="note-info">
+      <strong>Note:</strong> The machine learning training pipeline described in this section is planned
+      for a future release and is <strong>not currently active</strong>. The anonymous data collected
+      through Market Price Insights (above) may be used as input when this feature launches.
+      This section is included for transparency so users understand how their data may be used
+      when that feature is introduced.
+    </p>
+    <p>
+      In a future version, we may use anonymised and aggregated farm data — stripped of any identifier
+      that could link it back to you or your farm — to train and improve predictive features within
+      PigPal (for example, feed cost forecasting or health pattern detection). Raw farm records,
+      animal tags, financial figures, and personal identifiers will never be used in identifiable
+      form for model training.
+    </p>
+    <p>
+      When this feature becomes active, you will be able to opt out at any time from the privacy and
+      data sharing settings in the app's Settings screen. Opting out will not affect any core functionality.
     </p>
   </section>
   <section>
@@ -103,7 +126,8 @@
     <ul>
       <li><strong>Service providers:</strong> trusted third parties (e.g., Google Firebase, Crashlytics, or analytics partners)
         who help us operate the app, store data, or send notifications. They process data under strict confidentiality agreements.</li>
-      <li><strong>ML service providers:</strong> anonymised, aggregated farm data may be processed by machine learning infrastructure providers under strict data processing agreements. No personally identifiable or farm-identifiable data is shared for this purpose.</li>
+      <li><strong>Market Price Insights (active, opt-in):</strong> when you enable Market Price Insights, anonymous sale price data is shared with our servers to compute regional price benchmarks. No personally identifiable or farm-identifiable data is included.</li>
+      <li><strong>ML service providers (future):</strong> when the ML training pipeline launches, anonymised and aggregated data may be processed by machine learning infrastructure providers under strict data processing agreements. No personally identifiable data will be shared. This is not currently active.</li>
       <li><strong>Advertising partners:</strong> for free-trial users, Google AdMob may process the device Advertising ID (AAID) and related signals to display and measure contextual ads. No personal or farm data is shared for ad targeting.</li>
       <li><strong>Legal requests:</strong> when required by law or to protect our rights, property, or users' safety.</li>
       <li><strong>Business transfers:</strong> in connection with a merger, acquisition, or sale of assets, subject to data protection safeguards.</li>
@@ -131,7 +155,7 @@
     </p>
   </section>
   <section>
-    <h2>Analytics, crash reporting & opt-out</h2>
+    <h2>Analytics, crash reporting &amp; opt-out</h2>
     <p>
       PigPal uses analytics and crash reporting (for example, Firebase Analytics and Crashlytics)
       to improve stability and performance. These tools collect anonymous or pseudonymized data.
@@ -139,9 +163,9 @@
     </p>
   </section>
   <section>
-    <h2>Permissions & controls</h2>
+    <h2>Permissions &amp; controls</h2>
     <p>
-      You can control camera, location, and notification permissions at any time in your device settings. 
+      You can control camera, location, and notification permissions at any time in your device settings.
       Denying a permission will only limit the related feature (for example, adding listing photos or tagging approximate location);
       the rest of PigPal will continue to work.
     </p>
@@ -155,14 +179,12 @@
   </section>
   <section>
     <h2>Your rights</h2>
-    <p>
-      Depending on your region, you may have the right to:
-    </p>
+    <p>Depending on your region, you may have the right to:</p>
     <ul>
       <li>Access and review your personal or farm-related data stored by PigPal.</li>
       <li>Request correction, export, or deletion of your data.</li>
       <li>Withdraw consent for analytics or cloud synchronization at any time.</li>
-      <li>Opt out of your data being used in ML training, separately from opting out from privacy and data sharing in the settings screen.</li>
+      <li>Opt out of your data being used in ML training (when that feature becomes active), separately from other privacy settings in the Settings screen.</li>
     </ul>
     <p>To exercise your rights, please contact us at the address below. Verification may be required before action.</p>
   </section>
@@ -176,8 +198,8 @@
   <section>
     <h2>Contact</h2>
     <p>
-      For questions or requests about this Privacy Policy or your data, please contact:<br>
-      Email: <a href="mailto:superappsint@gmail.com">superappsint@gmail.com</a><br/>
+      For questions or requests about this Privacy Policy or your data, please contact:<br />
+      Email: <a href="mailto:superappsint@gmail.com">superappsint@gmail.com</a><br />
       (We typically respond within a few business days.)
     </p>
   </section>
