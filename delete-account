@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PigPal — Delete Account</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f7f8fa;
+      color: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 16px 60px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      max-width: 560px;
+      width: 100%;
+      padding: 40px 36px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: #e8f5e9;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+    }
+
+    .logo-text {
+      font-size: 22px;
+      font-weight: 700;
+      color: #2e7d32;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #1a1a2e;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 16px;
+    }
+
+    .what-deleted {
+      background: #fff8e1;
+      border-left: 4px solid #f9a825;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 20px 0;
+    }
+
+    .what-deleted h2 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e65100;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .what-deleted ul {
+      padding-left: 18px;
+      font-size: 14px;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    .email-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: #2e7d32;
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .email-btn:hover { background: #1b5e20; }
+
+    .note {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #888;
+      line-height: 1.6;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 28px 0;
+    }
+
+    footer {
+      margin-top: 36px;
+      font-size: 12px;
+      color: #aaa;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo">
+      <div class="logo-icon">🐷</div>
+      <span class="logo-text">PigPal</span>
+    </div>
+
+    <h1>Delete Your Account</h1>
+
+    <p>
+      You can request deletion of your PigPal account and all associated data at any time.
+      Once deleted, your account and data cannot be recovered.
+    </p>
+
+    <div class="what-deleted">
+      <h2>What will be deleted</h2>
+      <ul>
+        <li>Your account credentials and profile</li>
+        <li>All pig records, breeding logs, and farm data</li>
+        <li>Vaccination, feeding, and task history</li>
+        <li>Marketplace listings and transaction records</li>
+        <li>Cloud-synced backups associated with your account</li>
+      </ul>
+    </div>
+
+    <p>
+      To request deletion, send an email to us from the address linked to your PigPal account.
+      We will process your request within <strong>7 business days</strong> and send a confirmation once complete.
+    </p>
+
+    <a class="email-btn"
+       href="mailto:superappsint@gmail.com?subject=PigPal%20Account%20Deletion%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20the%20deletion%20of%20my%20PigPal%20account%20and%20all%20associated%20data.%0A%0ARegistered%20email%3A%20%5Byour%20email%20here%5D%0A%0AThank%20you.">
+      ✉ Request Account Deletion
+    </a>
+
+    <p class="note">
+      This will open your email app with a pre-filled deletion request. Make sure to send it
+      from the email address registered with your PigPal account.
+    </p>
+
+    <hr class="divider" />
+
+    <p style="font-size:13px; color:#888;">
+      For more information on how we handle your data, see our
+      <a href="https://superappsindia.github.io/pigpal-site/privacy.html" style="color:#2e7d32;">Privacy Policy</a>.
+    </p>
+  </div>
+
+  <footer>© SuperApps — PigPal</footer>
+
+</body>
+</html>
