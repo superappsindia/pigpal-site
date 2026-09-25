@@ -22,13 +22,13 @@
 <body>
   <header>
     <h1>PigPal — Privacy Policy</h1>
-    <p class="small">Last updated: <strong>May 09, 2026</strong></p>
+    <p class="small">Last updated: <strong>September 25, 2026</strong></p>
   </header>
   <section>
     <h2>Introduction</h2>
     <p>
       PigPal (the "App") is developed and provided by SuperApps ("we", "us", "our"). PigPal helps farmers
-      manage piggery tasks such as breeding, feeding, vaccinations, inventory and transactions.
+      manage piggery tasks such as breeding, feeding, vaccinations, weighing, inventory and transactions.
       This Privacy Policy explains what information we collect, why we collect it, how we store it
       (including cloud storage), and how you can control it.
     </p>
@@ -37,8 +37,9 @@
     <h2>Scope</h2>
     <p>
       This policy applies to personal and farm-related data collected through the PigPal mobile and web applications,
-      associated backend services (including Firebase, Firestore, and cloud synchronization), and any
-      related support channels. It does not apply to information collected offline or by unaffiliated third parties.
+      associated backend services (including Firebase, Firestore, Cloud Storage, cloud synchronization and our
+      weight-estimation server), and any related support channels. It does not apply to information collected
+      offline or by unaffiliated third parties.
     </p>
   </section>
   <section>
@@ -46,14 +47,15 @@
     <p>We collect the following types of information:</p>
     <ul>
       <li><strong>Device &amp; technical data:</strong> device model, operating system version, app version, language, and basic diagnostics for crash reports and troubleshooting.</li>
-      <li><strong>App data you enter:</strong> farm records, animal tags, breeding logs, vaccination and deworming records, feed and inventory data, financial transactions, and other farm management information you choose to store in the app.</li>
+      <li><strong>App data you enter:</strong> farm records, animal tags, breeding logs, vaccination and deworming records, weights, feed and inventory data, financial transactions, and other farm management information you choose to store in the app.</li>
       <li><strong>Usage data:</strong> anonymous or pseudonymized analytics events (feature usage, timestamps) to help us improve the app.</li>
       <li><strong>Cloud sync data:</strong> when you enable cloud synchronization or backups, copies of your farm records are securely stored on cloud servers (for example, Google Firebase Firestore or Cloud Storage) under your account identifier.</li>
       <li><strong>Support data:</strong> messages, attachments, or screenshots you send to us when contacting support.</li>
       <li><strong>Marketplace listings:</strong> photos, descriptions, and contact details you choose to publish in PigPal Marketplace are visible to other users within the app and can be edited or deleted by you at any time.</li>
       <li><strong>Camera &amp; location (Marketplace):</strong> when you create or edit a Marketplace listing, PigPal may request camera access to capture or attach listing photos and (optional) <em>approximate</em> location to tag your farm area. Location is never collected automatically and can be skipped; denying these permissions only limits those specific features.</li>
-      <li><strong>Anonymous farm data (Data Collection, opt-in):</strong> if you enable Data Collection in Settings, anonymous figures such as sale price, pig breed, litter size, and piglet mortality may be shared with our servers to build regional benchmarks. Your name, farm name, pig tag IDs, and any personally identifiable information are never included.</li>
-      <li><strong>Advertising data:</strong> Google AdMob may access the device's Google Advertising ID (AAID) and other anonymous identifiers to display and measure contextual ads. </li>
+      <li><strong>Weight-by-camera photos:</strong> when you estimate a pig's weight from a photo, the photo is sent to our weight-estimation server to calculate the estimate. When you also enter a weight measured with a scale or weighing tape, an anonymised copy of the photo, the camera estimate and your measured weight are kept to improve the weight estimator (see "Machine learning and model improvement").</li>
+      <li><strong>Anonymous farm data ("Help improve PigPal", your choice):</strong> after you first sign in, PigPal asks you once whether you want to help improve PigPal. If you say Yes, anonymous figures such as sale price, pig breed, litter size, piglet mortality and treatment records are shared with our servers to build regional benchmarks and improve PigPal's AI features. Your name, farm name, pig tag IDs, location and any personally identifiable information are never included. You can change your answer at any time in <em>Settings → Privacy choices</em>.</li>
+      <li><strong>Advertising data:</strong> Google AdMob may access the device's Google Advertising ID (AAID) and other anonymous identifiers to display and measure contextual ads.</li>
     </ul>
   </section>
   <section>
@@ -61,61 +63,66 @@
     <p>We use the data we collect to:</p>
     <ul>
       <li>Provide and maintain app functionality, both offline and through secure cloud synchronization.</li>
+      <li>Estimate pig weights from photos, and alert you to weight loss or slow growth based on your own weight records.</li>
       <li>Send optional reminders or server-based notifications (if you enable them) for vaccinations, breeding, and feeding schedules.</li>
       <li>Backup and restore your data safely across devices via encrypted cloud sync (if you opt in).</li>
       <li>Diagnose and fix technical issues, including crash reporting and performance optimization.</li>
       <li>Conduct analytics to improve features and user experience.</li>
       <li>Respond to your support and feedback requests.</li>
-      <li>Build regional pig price benchmarks from anonymized, collective farm data shared by enrolled users (when you opt in to Data Collection).</li>
+      <li>Build regional pig price benchmarks and farm comparisons from anonymised, collective farm data (when you say Yes to "Help improve PigPal").</li>
+      <li>Train and improve PigPal's machine learning features, such as the weight estimator (see below).</li>
       <li>Support Marketplace features such as attaching photos and optionally tagging an approximate location on listings (only when you choose to use those features).</li>
     </ul>
   </section>
   <section>
-    <h2>Farm &amp; Market Insights — data collection &amp; sharing</h2>
+    <h2>Farm &amp; Market Insights — "Help improve PigPal"</h2>
     <p>
-      PigPal includes an <strong>opt-in Data Collection</strong> feature that, when enabled, shares
-      anonymous farm data with our servers to build regional benchmarks for all enrolled farms.
-      The data shared is limited to anonymous figures only — specifically: sale price, pig breed, litter size,
-      and piglet mortality. Your name, farm name, pig tag IDs, location, financial account details,
-      and any personally identifiable information never leave your device as part of this feature.
+      Right after you first sign in, PigPal asks you one question: whether you want to help improve PigPal.
+      Nothing is shared under this choice unless you tap <strong>Yes</strong>. If you say Yes, anonymous farm figures
+      (such as sale price, pig breed, litter size, piglet mortality and treatment records) are shared with our servers.
+      Your name, farm name, pig tag IDs, location, financial account details, and any personally identifiable
+      information never leave your device as part of this feature. Contributions are grouped only by a one-way code
+      that cannot be turned back into your account.
     </p>
     <p>
-      When Data Collection is enabled, you gain access to the <strong>Farm &amp; Market Insights</strong> tab
-      inside the app's Insights panel. This tab includes the Market Price Index (a regional average sale price
-      computed from anonymous contributions by enrolled farms) and, as it becomes available,
-      regional benchmarks for breed performance, litter size, and piglet mortality.
-      If you disable Data Collection, the Farm &amp; Market Insights tab is shown with a blurred overlay
-      and the data within it is unavailable until you re-enable it.
+      Saying Yes unlocks the <strong>Farm &amp; Market Insights</strong> tab inside the app's Insights panel. This tab
+      includes the Market Price Index (a regional average sale price computed from anonymous contributions) and,
+      as it becomes available, regional benchmarks for breed performance, litter size, and piglet mortality.
+      The same anonymous figures may also be used to train PigPal's AI features.
+      If you say No, or later turn it off, the Farm &amp; Market Insights tab is shown with a blurred overlay
+      and the data within it is unavailable until you turn it back on.
     </p>
     <p>
       The <strong>Business Insights</strong> tab (herd snapshot, feed balance, profit chart, break-even
-      analysis, and health task alerts) is a separate paid feature and is not affected by the
-      Data Collection toggle.
+      analysis, and health task alerts) is a separate paid feature and is not affected by this choice.
     </p>
     <p>
-      Data Collection is <strong>opt-in</strong> and can be toggled on or off at any time from
-      <em>Settings → Data Collection</em>. Disabling it stops any further data sharing immediately.
+      You can change your answer at any time from <em>Settings → Privacy choices</em>.
+      Turning it off stops any further sharing of these figures immediately.
     </p>
   </section>
   <section>
     <h2>Machine learning and model improvement</h2>
-    <p class="note-info">
-      <strong>Note:</strong> The machine learning training pipeline described in this section is planned
-      for a future release and is <strong>not currently active</strong>. The anonymous data collected
-      through the Data Collection feature (above) may be used as input when this pipeline launches.
-      This section is included for transparency so users understand how their data may be used
-      when that feature is introduced.
+    <p>
+      <strong>Weight estimator (active).</strong> When you estimate a pig's weight from a photo and then enter a
+      weight you measured with a scale or weighing tape, PigPal keeps an anonymised copy of that photo together
+      with the camera estimate and your measured weight. We use these pairs to train and check the weight
+      estimator, which makes photo weights more accurate for you and for other farmers. This is part of the
+      weight-by-camera feature and applies whether or not you chose "Help improve PigPal".
     </p>
     <p>
-      In a future version, we may use anonymised and aggregated farm data — stripped of any identifier
-      that could link it back to you or your farm — to train and improve predictive features within
-      PigPal (for example, feed cost forecasting or health pattern detection). Raw farm records,
-      animal tags, financial figures, and personal identifiers will never be used in identifiable
-      form for model training.
+      The copy contains no name, farm name, phone number, pig tag number or account ID. Location and other
+      hidden photo details (EXIF data such as GPS position, device model and time taken) are removed on your
+      phone before upload. The copies are readable only by PigPal's model-training systems, never by other users.
+      If you do not want to contribute, simply do not use weight-by-camera; manual weight entry works as before.
+      You can ask us to delete photos you contributed using the contact address below.
     </p>
     <p>
-      When this feature becomes active, you will be able to opt out at any time from
-      <em>Settings → Data Collection</em>. Opting out will not affect any core functionality.
+      <strong>Other AI features.</strong> If you said Yes to "Help improve PigPal", the anonymous farm figures
+      described above may also be used to train other predictive features (for example, feed cost forecasting or
+      health pattern detection). Raw farm records, animal tags, financial figures, and personal identifiers are
+      never used in identifiable form for model training. Turning the choice off in
+      <em>Settings → Privacy choices</em> stops this and does not affect any core functionality.
     </p>
   </section>
   <section>
@@ -141,8 +148,8 @@
     <ul>
       <li><strong>Service providers:</strong> trusted third parties (e.g., Google Firebase, Crashlytics, or analytics partners)
         who help us operate the app, store data, or send notifications. They process data under strict confidentiality agreements.</li>
-      <li><strong>Data Collection — Farm &amp; Market Insights (active, opt-in):</strong> when you enable Data Collection, anonymous figures (sale price, pig breed, litter size, piglet mortality) are shared with our servers to compute regional benchmarks. No personally identifiable or farm-identifiable data is included.</li>
-      <li><strong>ML service providers (future):</strong> when the ML training pipeline launches, anonymised and aggregated data may be processed by machine learning infrastructure providers under strict data processing agreements. No personally identifiable data will be shared. This is not currently active.</li>
+      <li><strong>"Help improve PigPal" (your choice):</strong> if you say Yes, anonymous farm figures are shared with our servers to compute regional benchmarks and improve PigPal's AI features. No personally identifiable or farm-identifiable data is included.</li>
+      <li><strong>Machine learning infrastructure:</strong> anonymised weight-by-camera photos and weights, and anonymous farm figures you chose to share, are processed on PigPal's own servers and Google Firebase for model training. No personally identifiable data is shared.</li>
       <li><strong>Advertising partners:</strong> Google AdMob may process the device Advertising ID (AAID) and related signals to display and measure contextual ads. No personal or farm data is shared for ad targeting.</li>
       <li><strong>Legal requests:</strong> when required by law or to protect our rights, property, or users' safety.</li>
       <li><strong>Business transfers:</strong> in connection with a merger, acquisition, or sale of assets, subject to data protection safeguards.</li>
@@ -153,10 +160,12 @@
     <p>
       Locally stored data remains on your device until you delete it or uninstall the app.
       Cloud-stored data (if enabled) is retained as long as your account is active or until you request deletion.
+      Anonymised training data (weight-by-camera photos and anonymous farm figures) is kept for as long as it is
+      useful for improving PigPal's models, unless you ask us to delete your contributions.
       Support and diagnostic logs are kept only as long as needed for troubleshooting or as required by law.
     </p>
     <p>
-      You may request deletion of your cloud data and associated account by contacting us at
+      You may request deletion of your cloud data, contributed training photos and associated account by contacting us at
       <a href="mailto:hello@superappsdomain.com">hello@superappsdomain.com</a>.
       Deletion requests will be processed within a reasonable timeframe and confirmed once complete.
     </p>
@@ -181,8 +190,8 @@
     <h2>Permissions &amp; controls</h2>
     <p>
       You can control camera, location, and notification permissions at any time in your device settings.
-      Denying a permission will only limit the related feature (for example, adding listing photos or tagging approximate location);
-      the rest of PigPal will continue to work.
+      Denying a permission will only limit the related feature (for example, weighing pigs by photo, adding listing
+      photos or tagging approximate location); the rest of PigPal will continue to work.
     </p>
   </section>
   <section>
@@ -198,8 +207,8 @@
     <ul>
       <li>Access and review your personal or farm-related data stored by PigPal.</li>
       <li>Request correction, export, or deletion of your data.</li>
-      <li>Withdraw consent for analytics, cloud synchronization, or Data Collection at any time.</li>
-      <li>Opt out of your data being used in ML training (when that feature becomes active) from <em>Settings → Data Collection</em>.</li>
+      <li>Withdraw consent for analytics, cloud synchronization, or "Help improve PigPal" at any time — the last from <em>Settings → Privacy choices</em>.</li>
+      <li>Ask us to delete weight-by-camera photos you contributed.</li>
     </ul>
     <p>To exercise your rights, please contact us at the address below. Verification may be required before action.</p>
   </section>
