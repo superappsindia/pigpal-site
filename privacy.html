@@ -22,7 +22,7 @@
 <body>
   <header>
     <h1>PigPal — Privacy Policy</h1>
-    <p class="small">Last updated: <strong>September 25, 2026</strong></p>
+    <p class="small">Last updated: <strong>October 8, 2026</strong></p>
   </header>
   <section>
     <h2>Introduction</h2>
@@ -47,13 +47,16 @@
     <p>We collect the following types of information:</p>
     <ul>
       <li><strong>Device &amp; technical data:</strong> device model, operating system version, app version, language, and basic diagnostics for crash reports and troubleshooting.</li>
+      <li><strong>Account &amp; sign-in data:</strong> the email address, phone number, Google account details or user ID you use to sign in, and the account identifier that Firebase Authentication assigns to you. A phone number is used to send a one-time verification code (SMS).</li>
+      <li><strong>Purchases and subscriptions:</strong> if you buy a plan, we record which plan you have, its start and end dates and the transaction reference. Payments are handled by Google Play or, for purchases made outside Google Play, by our payment provider Paddle. We never see or store your card or bank details.</li>
+      <li><strong>Notification token:</strong> a device token used to deliver push notifications and reminders (Firebase Cloud Messaging).</li>
       <li><strong>App data you enter:</strong> farm records, animal tags, breeding logs, vaccination and deworming records, weights, feed and inventory data, financial transactions, and other farm management information you choose to store in the app.</li>
       <li><strong>Usage data:</strong> anonymous or pseudonymized analytics events (feature usage, timestamps) to help us improve the app.</li>
       <li><strong>Cloud sync data:</strong> when you enable cloud synchronization or backups, copies of your farm records are securely stored on cloud servers (for example, Google Firebase Firestore or Cloud Storage) under your account identifier.</li>
       <li><strong>Support data:</strong> messages, attachments, or screenshots you send to us when contacting support.</li>
       <li><strong>Marketplace listings:</strong> photos, descriptions, and contact details you choose to publish in PigPal Marketplace are visible to other users within the app and can be edited or deleted by you at any time.</li>
-      <li><strong>Camera &amp; location (Marketplace):</strong> when you create or edit a Marketplace listing, PigPal may request camera access to capture or attach listing photos and (optional) <em>approximate</em> location to tag your farm area. Location is never collected automatically and can be skipped; denying these permissions only limits those specific features.</li>
-      <li><strong>Weight-by-camera photos:</strong> when you estimate a pig's weight from a photo, the photo is sent to our weight-estimation server to calculate the estimate. When you also enter a weight measured with a scale or weighing tape, an anonymised copy of the photo, the camera estimate and your measured weight are kept to improve the weight estimator (see "Machine learning and model improvement").</li>
+      <li><strong>Camera &amp; location (Marketplace):</strong> when you create or edit a Marketplace listing, PigPal may request camera access to capture or attach listing photos and (optional) your device location to fill in the area of your listing. The location is read only when you tap the location button; it may be precise, is stored with the listing, and other users see the area, city and state shown on the listing. Location is never collected automatically and can be skipped; denying these permissions only limits those specific features.</li>
+      <li><strong>Weight-by-camera photos:</strong> when you estimate a pig's weight from a photo, the photo is sent to our weight-estimation server to calculate the estimate. The server recognises your PigPal sign-in so that each farm's results stay separate. When you also enter a weight measured with a scale or weighing tape, an anonymised copy of the photo, the camera estimate and your measured weight are kept to improve the weight estimator (see "Machine learning and model improvement").</li>
       <li><strong>Anonymous farm data ("Help improve PigPal", your choice):</strong> after you first sign in, PigPal asks you once whether you want to help improve PigPal. If you say Yes, anonymous figures such as sale price, pig breed, litter size, piglet mortality and treatment records are shared with our servers to build regional benchmarks and improve PigPal's AI features. Your name, farm name, pig tag IDs, location and any personally identifiable information are never included. You can change your answer at any time in <em>Settings → Privacy choices</em>.</li>
       <li><strong>Advertising data:</strong> Google AdMob may access the device's Google Advertising ID (AAID) and other anonymous identifiers to display and measure contextual ads.</li>
     </ul>
@@ -71,7 +74,7 @@
       <li>Respond to your support and feedback requests.</li>
       <li>Build regional pig price benchmarks and farm comparisons from anonymised, collective farm data (when you say Yes to "Help improve PigPal").</li>
       <li>Train and improve PigPal's machine learning features, such as the weight estimator (see below).</li>
-      <li>Support Marketplace features such as attaching photos and optionally tagging an approximate location on listings (only when you choose to use those features).</li>
+      <li>Support Marketplace features such as attaching photos and optionally adding your location to listings (only when you choose to use those features).</li>
     </ul>
   </section>
   <section>
@@ -150,13 +153,14 @@
         who help us operate the app, store data, or send notifications. They process data under strict confidentiality agreements.</li>
       <li><strong>"Help improve PigPal" (your choice):</strong> if you say Yes, anonymous farm figures are shared with our servers to compute regional benchmarks and improve PigPal's AI features. No personally identifiable or farm-identifiable data is included.</li>
       <li><strong>Machine learning infrastructure:</strong> anonymised weight-by-camera photos and weights, and anonymous farm figures you chose to share, are processed on PigPal's own servers and Google Firebase for model training. No personally identifiable data is shared.</li>
+      <li><strong>Payment providers:</strong> Google Play and Paddle process your payment. They give us the plan, status and transaction reference; they do not give us your card details.</li>
       <li><strong>Advertising partners:</strong> Google AdMob may process the device Advertising ID (AAID) and related signals to display and measure contextual ads. No personal or farm data is shared for ad targeting.</li>
       <li><strong>Legal requests:</strong> when required by law or to protect our rights, property, or users' safety.</li>
       <li><strong>Business transfers:</strong> in connection with a merger, acquisition, or sale of assets, subject to data protection safeguards.</li>
     </ul>
   </section>
   <section>
-    <h2>Data retention and deletion</h2>
+    <h2 id="data-deletion">Data retention and deletion</h2>
     <p>
       Locally stored data remains on your device until you delete it or uninstall the app.
       Cloud-stored data (if enabled) is retained as long as your account is active or until you request deletion.
@@ -167,7 +171,21 @@
     <p>
       You may request deletion of your cloud data, contributed training photos and associated account by contacting us at
       <a href="mailto:hello@superappsdomain.com">hello@superappsdomain.com</a>.
-      Deletion requests will be processed within a reasonable timeframe and confirmed once complete.
+      Deletion requests will be processed within 7 business days and confirmed once complete.
+    </p>
+  </section>
+  <section id="delete-account">
+    <h2>How to delete your account and data</h2>
+    <p>
+      In the app, open the menu on the dashboard and tap <strong>Delete Account</strong>, then <strong>Request Account Deletion</strong>.
+      This opens an email to <a href="mailto:hello@superappsdomain.com">hello@superappsdomain.com</a> with your account ID filled in.
+      If you cannot use the app, email us from the address or phone number linked to your account and write "Account deletion" in the subject.
+    </p>
+    <p>
+      We delete your account credentials and profile, farm records, breeding, vaccination, feeding and task history, marketplace listings,
+      cloud-synced backups and any weight-by-camera photos you contributed, within 7 business days, and confirm by email.
+      We may keep purchase and transaction records for the period the law requires for tax and accounting.
+      Deleted data cannot be recovered.
     </p>
   </section>
   <section>
@@ -191,7 +209,7 @@
     <p>
       You can control camera, location, and notification permissions at any time in your device settings.
       Denying a permission will only limit the related feature (for example, weighing pigs by photo, adding listing
-      photos or tagging approximate location); the rest of PigPal will continue to work.
+      photos or tagging a location); the rest of PigPal will continue to work.
     </p>
   </section>
   <section>
